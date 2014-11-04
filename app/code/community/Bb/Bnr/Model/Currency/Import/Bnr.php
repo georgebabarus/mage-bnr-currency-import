@@ -60,7 +60,7 @@ class Bb_Bnr_Model_Currency_Import_Bnr extends Mage_Directory_Model_Currency_Imp
         }
 
         try {
-            $value = 1/floatval($this->_httpClient->getCurs($currencyTo));
+            $value = 1/floatval($this->_httpClient->getRate($currencyTo));
 
             if( empty($value)) {
                 $this->_messages[] = Mage::helper('directory')->__('Cannot retrieve rate from %s. (RON -> %)', $this->_url,$currencyTo);
