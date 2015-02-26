@@ -16,7 +16,7 @@
                         <bb_help>
                             <title>Help</title>
                             <sort_order>110</sort_order>
-                            <action>adminhtml/system_config/edit/section/currency</action>
+                            <action>adminhtml/bbModules/help/module/bb_bnr</action>
                         </bb_help>
                     </children>
                 </bb_bnr>
